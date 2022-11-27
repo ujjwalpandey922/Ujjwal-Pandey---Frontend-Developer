@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.section__padding{
+  padding: 4rem 6rem;
+}
+a{
+  text-decoration: inherit;
+  color: inherit
+}
+
+.app__bg{
+  background: rgba(0, 0, 0, 0.884);
+}
+
+.app__image{
+  background: url("./assets/deep_space-wallpaper-1920x1200.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.custom__button{
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px ;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 128, 122);
+}
+.custom__button:hover{
+    color: aquamarine;
+    background: rgba(0, 0, 0, 0.689);
+}
+
+/*-----Slide---------*/
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}

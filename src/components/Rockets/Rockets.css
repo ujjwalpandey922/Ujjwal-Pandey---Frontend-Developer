@@ -1,0 +1,34 @@
+.app__rockets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.app__rockets > *{
+    color: bisque;
+}
+.app__rockets h1{
+        width: 100%;
+        font: 600;
+        font-family:monospace, Times, serif;
+        color: rgba(7, 242, 242, 0.829);
+        margin: 5rem;
+}
+.app__rockets-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+    margin-bottom: 5rem;
+}
+
+@media (max-width:800px) {
+    .app__rockets h1{
+
+        width: 100%;
+            font-size: 20px
+    }
+}

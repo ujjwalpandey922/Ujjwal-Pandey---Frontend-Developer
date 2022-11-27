@@ -1,0 +1,49 @@
+.app__baner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+.app__baner-banerInfo{
+   flex: 1;
+   text-align: center;
+}
+.app__baner-banerInfo h1{
+    color: rgb(215, 225, 75);
+}
+.app__baner-banerInfo p{
+    color: rgb(138, 138, 138);
+    font-size: 20px;
+    margin-top: 2rem;
+    font-family: sans-serif;
+   
+}
+.app__baner-img{
+   flex: 1;
+   margin-left: 3rem;
+} 
+.app__baner-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width:800px) {
+    .app__baner{
+
+        flex-direction: column-reverse;
+        gap: 3rem;    
+        padding-top: 2rem;
+    }
+    .app__baner-img{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:650px) {
+    
+    .app__baner-img{
+        width: 100%;
+    }
+}
